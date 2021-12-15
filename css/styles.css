@@ -522,13 +522,13 @@ img {
 .footer-address .contact {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
+
+  padding: 0;
 }
 .footer .address {
   margin-bottom: 9px;
 }
-.footer-address .contact {
-  padding: 0;
-}
+
 .footer .mail {
   margin-bottom: 9px;
 }
@@ -562,9 +562,9 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 .footer-contact {
+  flex-grow: 1;
   margin-right: 70px;
 }
 .footer-form {
@@ -842,7 +842,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
 
   min-width: 528px;
-  min-height: 581px;
+  /*min-height: 581px;*/
 
   background-color: white;
   opacity: 1;
@@ -853,8 +853,8 @@ img {
 }
 .close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 8px;
+  right: 8px;
 
   display: flex;
   justify-content: center;
@@ -922,6 +922,10 @@ img {
   color: var(--text-color);
 }
 
+.modal-label:nth-child(4) {
+  margin-bottom: 20px;
+}
+
 .modal-input {
   display: block;
   width: 448px;
@@ -985,6 +989,8 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 1.71;
